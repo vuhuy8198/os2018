@@ -1,0 +1,73 @@
+vuhuy8198@vuhuy8198-VirtualBox:~$ ps -A
+  PID TTY          TIME CMD
+    1 ?        00:00:01 init
+    2 ?        00:00:00 kthreadd
+    3 ?        00:00:00 ksoftirqd/0
+    4 ?        00:00:00 kworker/0:0
+    5 ?        00:00:00 kworker/0:0H
+    6 ?        00:00:00 kworker/u2:0
+    7 ?        00:00:01 rcu_sched
+    8 ?        00:00:00 rcu_bh
+    9 ?        00:00:00 migration/0
+   10 ?        00:00:00 watchdog/0
+   11 ?        00:00:00 khelper
+   12 ?        00:00:00 kdevtmpfs
+   13 ?        00:00:00 netns
+   14 ?        00:00:00 writeback
+   15 ?        00:00:00 kintegrityd
+   16 ?        00:00:00 bioset
+   17 ?        00:00:00 kworker/u3:0
+   18 ?        00:00:00 kblockd
+   19 ?        00:00:00 ata_sff
+vuhuy8198@vuhuy8198-VirtualBox:~$ gnome-calculator &
+[1] 2794
+vuhuy8198@vuhuy8198-VirtualBox:~$ ps axu | grep -i gnome-calculator | awk {'print $2'}
+2794
+2803
+vuhuy8198@vuhuy8198-VirtualBox:~$ cat /proc/2794/status
+Name:	gnome-calculato
+State:	S (sleeping)
+Tgid:	2794
+Ngid:	0
+Pid:	2794
+PPid:	2734
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 109 124 1000 
+VmPeak:	   80068 kB
+VmSize:	   80004 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   15212 kB
+VmRSS:	   15212 kB
+VmData:	   30076 kB
+VmStk:	     136 kB
+VmExe:	     244 kB
+VmLib:	   20180 kB
+VmPTE:	     112 kB
+VmSwap:	       0 kB
+Threads:	3
+SigQ:	0/15976
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000001000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000001fffffffff
+Seccomp:	0
+Cpus_allowed:	1
+Cpus_allowed_list:	0
+Mems_allowed:	1
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	155
+nonvoluntary_ctxt_switches:	212
+vuhuy8198@vuhuy8198-VirtualBox:~$ kill -STOP 2794
+vuhuy8198@vuhuy8198-VirtualBox:~$ kill -CONT 2794
+vuhuy8198@vuhuy8198-VirtualBox:~$ kill -KILL 2794
+[1]+  Killed                  gnome-calculator
+
