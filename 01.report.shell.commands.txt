@@ -1,0 +1,93 @@
+vuhuy8198@vuhuy8198-VirtualBox:~$ echo hello world
+hello world
+vuhuy8198@vuhuy8198-VirtualBox:~$ passwd
+Changing password for vuhuy8198.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+vuhuy8198@vuhuy8198-VirtualBox:~$ passwd
+Changing password for vuhuy8198.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+vuhuy8198@vuhuy8198-VirtualBox:~$ date
+Sun Jan 14 10:14:34 ICT 2018
+vuhuy8198@vuhuy8198-VirtualBox:~$ hostname
+vuhuy8198-VirtualBox
+vuhuy8198@vuhuy8198-VirtualBox:~$ arch
+i686
+vuhuy8198@vuhuy8198-VirtualBox:~$ uname -a
+Linux vuhuy8198-VirtualBox 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:50:54 UTC 2014 i686 i686 i386 GNU/Linux
+vuhuy8198@vuhuy8198-VirtualBox:~$ dmesg
+[    7.069382] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    7.069480] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    7.069723] ACPI: Enabled 2 GPEs in block 00 to 07
+[    7.069763] ACPI: \_SB_.PCI0: notify handler is installed
+[    7.069792] Found 1 acpi root devices
+[    7.070189] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    7.070194] vgaarb: loaded
+[    7.070195] vgaarb: bridge control possible 0000:00:02.0
+[    7.070522] SCSI subsystem initialized
+[    7.070586] libata version 3.00 loaded.
+[    7.070616] ACPI: bus type USB registered
+[    7.070690] usbcore: registered new interface driver usbfs
+[    7.070704] usbcore: registered new interface driver hub
+[    7.070732] usbcore: registered new device driver usb
+[    7.070841] PCI: Using ACPI for IRQ routing
+[    7.070843] PCI: pci_cache_line_size set to 64 bytes
+[    7.071047] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    7.071053] e820: reserve RAM buffer [mem 0x7fff0000-0x7fffffff]
+[    7.071156] NetLabel: Initializing
+[    7.071158] NetLabel:  domain hash size = 128
+[    7.071158] NetLabel:  protocols = UNLABELED CIPSOv4
+[    7.071172] NetLabel:  unlabeled traffic allowed by default
+[    7.071330] Switched to clocksource kvm-clock
+[    7.086258] AppArmor: AppArmor Filesystem Enabled
+[    7.086300] pnp: PnP ACPI init
+[    7.086317] ACPI: bus type PNP registered
+[    7.086393] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+vuhuy8198@vuhuy8198-VirtualBox:~$ uptime
+ 10:16:13 up 16 min,  2 users,  load average: 0.40, 0.17, 0.16
+vuhuy8198@vuhuy8198-VirtualBox:~$ who am i
+vuhuy8198 pts/0        2018-01-14 10:14 (:0)
+vuhuy8198@vuhuy8198-VirtualBox:~$ who
+vuhuy8198 tty7         2018-01-14 10:01
+vuhuy8198 pts/0        2018-01-14 10:14 (:0)
+vuhuy8198@vuhuy8198-VirtualBox:~$ id
+uid=1000(vuhuy8198) gid=1000(vuhuy8198) groups=1000(vuhuy8198),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),109(lpadmin),124(sambashare)
+vuhuy8198@vuhuy8198-VirtualBox:~$ last
+vuhuy819 pts/0        :0               Sun Jan 14 10:14   still logged in   
+vuhuy819 pts/0        :0               Sun Jan 14 10:08 - 10:13  (00:05)    
+vuhuy819 pts/0        :0               Sun Jan 14 10:04 - 10:07  (00:03)    
+reboot   system boot  3.13.0-32-generi Sun Jan 14 10:00 - 10:16  (00:16)    
+vuhuy819 pts/0        :0               Sat Jan 13 23:10 - crash  (10:50)    
+vuhuy819 pts/0        :0               Sat Jan 13 23:00 - 23:08  (00:08)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:40 - 23:00  (00:19)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:32 - 22:40  (00:08)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:29 - 22:32  (00:03)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:26 - 22:28  (00:01)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:10 - 22:18  (00:08)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:09 - 22:10  (00:01)    
+vuhuy819 pts/0        :0               Sat Jan 13 22:07 - 22:09  (00:01)    
+vuhuy819 pts/0        :0               Sat Jan 13 21:44 - 22:04  (00:20)    
+reboot   system boot  3.13.0-32-generi Sat Jan 13 20:53 - 10:16  (13:23)    
+reboot   system boot  3.13.0-32-generi Sat Jan 13 11:04 - 10:16  (23:11)    
+vuhuy819 pts/0        :0               Sat Jan 13 09:52 - 09:53  (00:01)    
+vuhuy819 pts/0        :0               Sat Jan 13 09:34 - 09:51  (00:17)    
+vuhuy819 pts/0        :0               Sat Jan 13 09:31 - 09:34  (00:02)    
+vuhuy819 pts/0        :0               Sat Jan 13 09:26 - 09:31  (00:05)    
+vuhuy819 pts/0        :0               Sat Jan 13 09:24 - 09:26  (00:01)    
+vuhuy819 pts/0        :0               Sat Jan 13 08:59 - 09:23  (00:24)    
+reboot   system boot  3.13.0-32-generi Sat Jan 13 08:49 - 10:16 (1+01:26)   
+reboot   system boot  3.13.0-32-generi Fri Jan 12 15:16 - 10:16 (1+19:00)   
+
+wtmp begins Fri Jan 12 15:16:18 2018
+vuhuy8198@vuhuy8198-VirtualBox:~$ finger
+Login      Name        Tty      Idle  Login Time   Office     Office Phone
+vuhuy8198  vuhuy8198   tty7       16  Jan 14 10:01
+vuhuy8198  vuhuy8198   pts/0          Jan 14 10:14 (:0)
+vuhuy8198@vuhuy8198-VirtualBox:~$ w
+63 column window is too narrow
+
