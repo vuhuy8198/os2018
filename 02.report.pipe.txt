@@ -1,0 +1,16 @@
+vuhuy8198@vuhuy8198-VirtualBox:~$ ls
+Desktop    examples.desktop  Pictures   Untitled Folder
+Documents  Music             Public     Videos
+Downloads  os2018            Templates
+vuhuy8198@vuhuy8198-VirtualBox:~$ ls | grep list
+vuhuy8198@vuhuy8198-VirtualBox:~$ wc -l /etc/passwd
+34 /etc/passwd
+vuhuy8198@vuhuy8198-VirtualBox:~$ free -m
+             total       used       free     shared    buffers     cached
+Mem:          2015        900       1115          0        116        444
+-/+ buffers/cache:        338       1676
+Swap:         2045          0       2045
+vuhuy8198@vuhuy8198-VirtualBox:~$ grep -m 1 'cpu cores' /proc/cpuinfo
+cpu cores	: 1
+vuhuy8198@vuhuy8198-VirtualBox:~$ find -iname "*.jpg"
+
