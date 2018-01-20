@@ -1,0 +1,6 @@
+vuhuy0801@vuhuy0801-VirtualBox:~$ ps -A
+5204 ?        00:00:04 firefox
+vuhuy0801@vuhuy0801-VirtualBox:~$ ps -o nlwp 5204
+NLWP
+  53
+
