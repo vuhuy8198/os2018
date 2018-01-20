@@ -1,0 +1,16 @@
+vuhuy0801@vuhuy0801-VirtualBox:~$ cat /proc/sched_debug | grep "systemd" | awk '{print $2}'
+1
+209
+227
+295
+708
+1180
+vuhuy0801@vuhuy0801-VirtualBox:~$ cat /proc/1/sched | grep switches
+nr_switches                                  :                 2225
+nr_voluntary_switches                        :                 1149
+nr_involuntary_switches                      :                 1076
+vuhuy0801@vuhuy0801-VirtualBox:~$ cat /proc/209/sched | grep switches
+nr_switches                                  :                  858
+nr_voluntary_switches                        :                  739
+nr_involuntary_switches                      :                  119
+
